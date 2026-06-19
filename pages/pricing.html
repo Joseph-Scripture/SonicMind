@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing — SonicMind</title>
+    <script src="https://kit.fontawesome.com/6c2da74d7d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-50 antialiased">
+
+    <!-- Navigation Header (Matches Landing Page Layout) -->
+    <header class="fixed top-0 left-0 right-0 z-50 px-4">
+        <nav class="mx-auto my-4 max-w-6xl w-full flex justify-between items-center bg-white/80 backdrop-blur-md border border-gray-100 rounded-full px-6 py-3 shadow-sm">
+            <div class="flex items-center gap-2">
+                <a href="../index.html" class="flex items-center gap-2 text-xl font-black text-gray-900 tracking-tight">
+                    <i class="fa-solid fa-waveform text-fuchsia-600"></i> 
+                    SonicMind
+                </a>
+            </div>
+            <ul class="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-600">
+                <li><a href="../index.html" class="hover:text-gray-900 transition-colors">Home</a></li>
+                <li><a href="../index.html#how-it-works" class="hover:text-gray-900 transition-colors">How it works</a></li>
+                <li><a href="#" class="text-blue-600 transition-colors">Pricing</a></li>
+                <li><a href="faq.html" class="hover:text-gray-900 transition-colors">FAQ</a></li>
+            </ul>
+            <div>
+                <a href="#" class="inline-flex items-center gap-2 bg-[#d90429] hover:bg-[#b30322] text-white text-xs font-bold px-5 py-2.5 rounded-full transition-all shadow-xs">
+                    Get Started Free
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Pricing Section Body -->
+    <main class="max-w-6xl mx-auto mt-36 px-4 lg:px-0 py-12 min-h-[80vh] flex flex-col justify-center">
+        
+        <!-- Header Copy Block -->
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-xs font-bold tracking-widest text-[#FC99C0] uppercase block mb-3">Simple Pricing</span>
+            <h1 class="font-black text-4xl lg:text-5xl text-gray-900 tracking-tight leading-tight">
+                Turn your ramblings into usable content
+            </h1>
+            <p class="text-gray-500 text-base lg:text-lg mt-4 leading-relaxed">
+                Choose the baseline that matches your structural needs. No hidden system fees, cancel whenever you want.
+            </p>
+        </div>
+
+        <!-- Pricing Cards Architecture Matrix -->
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto w-full items-stretch">
+            
+            <!-- Tier 1: Free Tier Card -->
+            <div class="bg-white border border-gray-100 rounded-3xl p-8 shadow-md flex flex-col justify-between transition-all duration-300 hover:shadow-lg">
+                <div>
+                    <h3 class="text-xl font-black text-gray-900 tracking-tight">Starter Base</h3>
+                    <p class="text-sm text-gray-400 mt-1">Perfect for testing core transcribing logic.</p>
+                    
+                    <!-- Pricing Value Display -->
+                    <div class="mt-6 flex items-baseline text-gray-900">
+                        <span class="text-5xl font-light font-mono tracking-tight">$0</span>
+                        <span class="ml-1 text-sm font-semibold text-gray-400">/ forever</span>
+                    </div>
+
+                    <!-- Feature Vector List -->
+                    <ul class="mt-8 space-y-4 text-sm font-medium text-gray-600">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check text-emerald-500 text-xs"></i>
+                            Up to 5 voice recordings per month
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check text-emerald-500 text-xs"></i>
+                            Max 3 minutes per audio file
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check text-emerald-500 text-xs"></i>
+                            Standard AI transcription engine
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300 line-through">
+                            <i class="fa-solid fa-xmark text-gray-300 text-xs"></i>
+                            Custom format styles
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mt-8">
+                    <button class="w-full bg-gray-50 hover:bg-gray-100 border border-gray-200 text-gray-700 font-bold text-sm py-3 px-4 rounded-xl transition-colors cursor-pointer">
+                        Get Started Free
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tier 2: Premium Tier Card (Highlights Brand Palette) -->
+            <div class="bg-white border-2 border-[#FC99C0] rounded-3xl p-8 shadow-xl flex flex-col justify-between relative transition-all duration-300 hover:shadow-2xl">
+                
+                <!-- Popular Corner Badge -->
+                <span class="absolute top-0 right-6 -translate-y-1/2 bg-[#FC99C0] text-white text-[10px] tracking-widest font-black uppercase px-3 py-1 rounded-full shadow-sm">
+                    Most Popular
+                </span>
+
+                <div>
+                    <h3 class="text-xl font-black text-gray-900 tracking-tight">SonicMind Plus</h3>
+                    <p class="text-sm text-gray-400 mt-1">Full structural depth for content power-users.</p>
+                    
+                    <!-- Pricing Value Display with Reference Anchors -->
+                    <div class="mt-6 flex items-baseline text-gray-900">
+                        <span class="text-5xl font-light font-mono tracking-tight">$59</span>
+                        <span class="ml-2 text-xs font-semibold text-gray-400 line-through">$197</span>
+                        <span class="ml-1 text-sm font-semibold text-gray-400">/ single payment</span>
+                    </div>
+                    <span class="text-[10px] font-bold text-indigo-600 bg-indigo-50 border border-indigo-100 px-2 py-0.5 rounded mt-2 inline-block">
+                        Limited time launch discount: save 70%
+                    </span>
+
+                    <!-- Feature Vector List -->
+                    <ul class="mt-8 space-y-4 text-sm font-medium text-gray-600">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-fuchsia-600 text-xs"></i>
+                            <strong>Unlimited</strong> notes and voice memos
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-fuchsia-600 text-xs"></i>
+                            20 minutes maximum audio length per file
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-fuchsia-600 text-xs"></i>
+                            Direct file upload (.mp3, .wav, .m4a)
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-fuchsia-600 text-xs"></i>
+                            Access to all Custom Formatting Styles
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-fuchsia-600 text-xs"></i>
+                            Secure your discount forever
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mt-8">
+                    <button class="w-full bg-linear-to-r from-pink-500 via-fuchsia-500 to-purple-600 hover:opacity-95 text-white font-bold text-sm py-4 px-4 rounded-xl shadow-md transition-all cursor-pointer">
+                        Get SonicMind Plus 
+                    </button>
+                    <span class="text-[10px] text-gray-400 text-center block mt-2 font-medium">
+                        <i class="fa-solid fa-shield-halved text-[9px] mr-1"></i> 14-days money-back guarantee
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-900 text-gray-500 py-8 px-4 text-center text-xs mt-12 border-t border-gray-800">
+        &copy; 2026 SonicMind. All rights reserved. Secure Processing Engine.
+    </footer>
+
+</body>
+</html>
