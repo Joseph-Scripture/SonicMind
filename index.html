@@ -3,46 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Take notes Design implementation</title>
-    <!-- FontAwesome for the logo icon -->
-<script src="https://kit.fontawesome.com/6c2da74d7d.js" crossorigin="anonymous"></script>    <!-- Tailwind v4 Script -->
+    <title>SonicMind — Turn messy audio into structured notes</title>
+    <!-- FontAwesome Font CDNs -->
+    <script src="https://kit.fontawesome.com/6c2da74d7d.js" crossorigin="anonymous"></script>
+    <!-- Tailwind CSS v4 -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-gray-50/50">
+<body class="bg-gray-50/50 antialiased">
 
+    <!-- Global Navigation Header -->
     <header class="fixed top-0 left-0 right-0 z-50 px-4">
         <nav class="mx-auto my-4 max-w-6xl w-full flex justify-between items-center bg-white/80 backdrop-blur-md border border-gray-100 rounded-full px-6 py-3 shadow-sm">
             
+            <!-- Brand Identity Logo -->
             <div class="flex items-center gap-2">
-                <a href="#" class="flex items-center gap-2 text-xl font-bold text-gray-900 tracking-tight">
+                <a href="index.html" class="flex items-center gap-2 text-xl font-black text-gray-900 tracking-tight">
                     <i class="fa-solid fa-waveform text-fuchsia-600"></i> 
-                    TalkNotes
+                    SonicMind
                 </a>
             </div>
 
-            <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
-                <li><a href="#" class="duration-200 hover:text-blue-900 transition-colors">Try it</a></li>
-                <li><a href="#" class="duration-200 hover:text-blue-900 transition-colors">How it works</a></li>
-                <li><a href="#" class="duration-200 hover:text-blue-900 transition-colors">Use cases</a></li>
-                <li><a href="#" class="duration-200 hover:text-blue-900 transition-colors">Price</a></li>
-                <li><a href="#" class="duration-200 hover:text-blue-900 transition-colors">FAQ</a></li>
+            <!-- Inter-page Navigation Architecture (Configured for 3-Page Requirements) -->
+            <ul class="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-600">
+                <li><a href="index.html" class="text-blue-600 transition-colors">Home</a></li>
+                <li><a href="#how-it-works" class="hover:text-gray-900 transition-colors">How it works</a></li>
+                <li><a href="pages/pricing.html" class="hover:text-gray-900 transition-colors">Pricing</a></li>
+                <li><a href="pages/faq.html" class="hover:text-gray-900 transition-colors">FAQ</a></li>
             </ul>
 
+            <!-- Primary Navigation Action -->
             <div>
-                <a href="#" class="inline-flex items-center gap-2 bg-[#d90429] hover:bg-[#b30322] text-white text-xs font-semibold px-4 py-2.5 rounded-full transition-all shadow-sm">
+                <a href="pages/pricing.html" class="inline-flex items-center gap-2 bg-[#d90429] hover:bg-[#b30322] text-white text-xs font-bold px-5 py-2.5 rounded-full transition-all shadow-xs cursor-pointer">
                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                    Get TalkNotes Plus
+                    Get SonicMind Plus
                 </a>
             </div>
 
         </nav>
     </header>
-    <main class="flex flex-col md:flex-row items-center justify-between gap-12 max-w-6xl mx-auto mt-32 px-4 lg:px-0 flex-1">
+
+    <!-- Main Hero Structural System -->
+    <main class="flex flex-col md:flex-row items-center justify-between gap-12 max-w-6xl mx-auto mt-36 px-4 lg:px-0 min-h-[75vh]">
     
-    <!-- Left Column: Copy & Text Content -->
+        <!-- Left Column: Marketing Copy Stack -->
         <div class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
             
-            <!-- Product Hunt Badge -->
+            <!-- Third-Party Social Validation Badge -->
             <div class="inline-flex items-center gap-2 bg-amber-50 border border-amber-200/60 rounded-full px-3 py-1 shadow-xs">
                 <span class="flex items-center justify-center w-5 h-5 rounded-full bg-linear-to-b from-amber-300 to-amber-500 shadow-inner">
                     <i class="fa-solid fa-trophy text-[10px] text-white"></i>
@@ -52,7 +58,7 @@
                 </span>
             </div>
 
-            <!-- Typography Block -->
+            <!-- Main Value Proposition Layout -->
             <div class="mt-6 max-w-lg">
                 <h1 class="font-black text-4xl lg:text-5xl text-gray-900 tracking-tight leading-[1.15]">
                     Turn messy thoughts <br>
@@ -60,26 +66,26 @@
                     Fast.
                 </h1>
                 
-                <p class="text-[#FC99C0] font-semibold text-lg my-5 tracking-wide">
+                <p class="text-[#FC99C0] font-bold text-lg my-5 tracking-wide">
                     The #1. AI voice note-taking app
                 </p>
                 
                 <p class="text-gray-500 text-base lg:text-lg leading-relaxed max-w-md">
-                    Turn hours of note taking into minutes. Just speak, and let the AI transcribe, clean up and structure your voice.
+                    Turn hours of note taking into minutes. Just speak, and let our intelligence system transcribe, clean up, and structure your voice.
                 </p>
                 
-                <!-- Call to Action Container -->
+                <!-- Main Conversions Layout Call To Actions -->
                 <div class="mt-8 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
-                    <button class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#d90429] hover:bg-[#b30322] text-white font-bold text-base px-8 py-4 rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer">
+                    <a href="pages/pricing.html" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#d90429] hover:bg-[#b30322] text-white font-bold text-base px-8 py-4 rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer">
                         <i class="fa-solid fa-arrow-right text-xs"></i> 
-                        Get TalkNotes +
-                    </button>
-                    <a href="#" class="text-sm font-semibold text-gray-500 hover:text-gray-900 transition-colors py-2">
+                        Get SonicMind +
+                    </a>
+                    <a href="#" class="text-sm font-bold text-gray-500 hover:text-gray-900 transition-colors py-2">
                         or Login
                     </a>
                 </div>
                 
-                <!-- Social Proof -->
+                <!-- Explicit User Endorsements Grid -->
                 <div class="mt-6 flex items-center justify-center md:justify-start gap-2 text-sm text-gray-500 font-medium">
                     <span>Trusted by +1400 happy users</span>
                     <div class="flex text-amber-400 text-xs gap-0.5">
@@ -93,38 +99,36 @@
             </div>
         </div>
 
-        <!-- Right Column: Interactive Demo Widget -->
+        <!-- Right Column: Interactive Micro-Interface Demo Box -->
         <div class="w-full md:w-[460px] bg-white border border-gray-100 rounded-3xl p-8 shadow-xl flex flex-col items-center justify-center relative overflow-hidden min-h-[380px]">
             
             <p class="text-xs font-semibold text-gray-400 text-center max-w-[240px] leading-relaxed mb-6">
                 Try the demo here. Just press record and speak your mind.
             </p>
             
-            <!-- Timer -->
+            <!-- Timer Output Display Element -->
             <h2 class="text-5xl font-light text-gray-900 font-mono tracking-tight mb-8">
                 01:00
             </h2>
             
-            <!-- Control Interface Cluster -->
+            <!-- Micro-interaction Interface Controllers -->
             <div class="flex items-center justify-center gap-6 w-full max-w-xs mb-8">
-                <!-- Left secondary action -->
                 <button class="w-11 h-11 rounded-full bg-gray-50 border border-gray-100 flex items-center justify-center text-gray-400 hover:text-gray-600 hover:bg-gray-100 transition-all shadow-xs cursor-pointer">
                     <i class="fa-solid fa-wand-magic-sparkles text-sm"></i>
                 </button>
 
-                <!-- Main Record Button (Centered) -->
+                <!-- Core Trigger Micro-button -->
                 <button class="w-20 h-20 rounded-full bg-[#d90429] hover:bg-[#b30322] flex items-center justify-center text-white text-2xl shadow-lg shadow-red-200 hover:shadow-xl transition-all duration-300 transform hover:scale-105 cursor-pointer relative group">
                     <span class="absolute inset-0 rounded-full bg-[#d90429] opacity-20 group-hover:scale-125 transition-transform duration-500"></span>
                     <i class="fa-solid fa-microphone relative z-10"></i>
                 </button>
 
-                <!-- Right secondary action -->
                 <button class="w-11 h-11 rounded-full bg-gray-50 border border-gray-100 flex items-center justify-center text-gray-400 hover:text-gray-600 hover:bg-gray-100 transition-all shadow-xs cursor-pointer">
                     <i class="fa-solid fa-ellipsis text-sm"></i>
                 </button>
             </div>
 
-            <!-- Footer Call to Action for Demo -->
+            <!-- Formatting Modifier Shortcut Indicator Button -->
             <button class="w-full max-w-xs bg-linear-to-r from-purple-500/10 to-indigo-500/10 text-indigo-600 font-semibold text-xs py-3 px-4 rounded-xl border border-indigo-100/50 flex items-center justify-center gap-2 group cursor-pointer hover:bg-indigo-50 transition-colors">
                 <i class="fa-solid fa-sparkles text-[10px]"></i>
                 Choose a custom format style
@@ -133,6 +137,129 @@
         </div>
 
     </main>
+
+    <!-- Authority Validation Strip -->
+    <section class="max-w-6xl mx-auto my-16 px-4 lg:px-0 flex items-center justify-center gap-12 text-gray-400 text-sm font-semibold tracking-wide uppercase">
+        <div class="flex items-center gap-2"><i class="fa-brands fa-medium text-lg"></i> Medium</div>
+        <div class="flex items-center gap-2"><i class="fa-brands fa-x-twitter text-lg"></i> Twitter</div>
+        <div class="flex items-center gap-2"><i class="fa-brands fa-linkedin text-lg"></i> LinkedIn</div>
+    </section>
+
+    <!-- Visual Scroll Context Indicator -->
+    <section class="max-w-6xl mx-auto my-8 px-4 lg:px-0 flex items-center justify-center text-gray-300 text-2xl animate-bounce">
+        <div><i class="fa-solid fa-chevron-down"></i></div>
+    </section>
+
+    <!-- Core Process Flow Layout Blueprint (Step by Step Features Grid) -->
+    <section id="how-it-works" class="max-w-6xl mx-auto px-4 py-24 scroll-mt-24">
+        
+        <div class="text-center mb-20">
+            <h2 class="text-3xl md:text-4xl font-black text-gray-900 tracking-tight">
+                How does it work?
+            </h2>
+        </div>
+
+        <div class="space-y-24 md:space-y-32">
+
+            <!-- Step 1 Layout Stack Structure -->
+            <div class="flex flex-col md:flex-row items-center justify-between gap-12 lg:gap-20">
+                <div class="w-full md:w-1/2 shadow-xl rounded-2xl overflow-hidden border border-gray-100">
+                    <img src="images/first_section.jpg" alt="Record Voice Mockup Graphic" class="w-full h-auto object-cover">
+                </div>
+                
+                <div class="w-full md:w-1/2 max-w-md">
+                    <span class="text-sm font-bold tracking-wider text-[#FC99C0] uppercase block mb-2">
+                        1. Record Your Voice
+                    </span>
+                    <p class="text-gray-500 leading-relaxed text-base">
+                        Speak your thoughts, ideas, or anything else. Don't stress about pauses or mistakes, just talk naturally.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 2 Layout Stack Structure (Alternating Grid Row Component) -->
+            <div class="flex flex-col md:flex-row-reverse items-center justify-between gap-12 lg:gap-20">
+                <div class="w-full md:w-1/2 shadow-xl rounded-2xl overflow-hidden border border-gray-100">
+                    <img src="images/first_section.jpg" alt="Choose Style Mockup Graphic" class="w-full h-auto object-cover">
+                </div>
+                
+                <div class="w-full md:w-1/2 max-w-md">
+                    <span class="text-sm font-bold tracking-wider text-[#FC99C0] uppercase block mb-2">
+                        2. Choose a style
+                    </span>
+                    <p class="text-gray-500 leading-relaxed text-base">
+                        With the latest AI technologies, SonicMind will transcribe your voice into any kind of content. Journal entry, cleaned up transcript, blog... Your creativity is the only limit!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 3 Layout Stack Structure -->
+            <div class="flex flex-col md:flex-row items-center justify-between gap-12 lg:gap-20">
+                <div class="w-full md:w-1/2 shadow-xl rounded-2xl overflow-hidden border border-gray-100">
+                    <img src="images/first_section.jpg" alt="Edit & Organize Mockup Graphic" class="w-full h-auto object-cover">
+                </div>
+                
+                <div class="w-full md:w-1/2 max-w-md">
+                    <span class="text-sm font-bold tracking-wider text-[#FC99C0] uppercase block mb-2">
+                        3. Edit & organize
+                    </span>
+                    <p class="text-gray-500 leading-relaxed text-base">
+                        Once your note is ready, you can tweak it to your liking. Add tags to organize your notes, change the style, or even edit the transcript.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Section Bottom Aggressive Action Call Element -->
+        <div class="mt-20 flex justify-center">
+            <a href="pages/pricing.html" class="inline-flex items-center gap-2 bg-linear-to-r from-pink-500 via-fuchsia-500 to-purple-600 hover:opacity-95 text-white font-bold text-base px-10 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer">
+                <i class="fa-solid fa-arrow-right text-xs"></i> 
+                Get SonicMind +
+            </a>
+        </div>
+    </section>
+
+    <!-- Global Application Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-16 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-12 md:gap-4">
+            
+            <!-- Brand Identity Summary Block -->
+            <div class="max-w-xs text-center md:text-left">
+                <h1 class="font-black text-2xl text-white tracking-tight">SonicMind</h1>
+                <p class="text-sm mt-3 text-gray-400 leading-relaxed">Turn messy thoughts into actionable notes. Fast.</p>
+                <div class="flex items-center gap-4 mt-5 justify-center md:justify-start">
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fab fa-facebook-f text-sm"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fab fa-x-twitter text-sm"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fab fa-instagram text-sm"></i></a>
+                </div>
+            </div>
+            
+            <!-- Content Route Groupings -->
+            <div class="text-center md:text-left">
+                <h2 class="font-bold text-sm text-gray-200 uppercase tracking-wider mb-4">Product</h2>
+                <ul class="space-y-2.5 text-sm">
+                    <li><a href="#how-it-works" class="hover:text-white transition-colors">How it works</a></li>
+                    <li><a href="pages/pricing.html" class="hover:text-white transition-colors">Pricing</a></li>
+                    <li><a href="pages/faq.html" class="hover:text-white transition-colors">FAQ Support</a></li>
+                </ul>
+            </div>
+
+            <!-- Compliance and Standard Privacy Links Groupings -->
+            <div class="text-center md:text-left">
+                <h2 class="font-bold text-sm text-gray-200 uppercase tracking-wider mb-4">Legal</h2>
+                <ul class="space-y-2.5 text-sm">
+                    <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Bottom Absolute Copyright Line -->
+        <div class="max-w-6xl mx-auto border-t border-gray-800 mt-12 pt-8 text-center text-xs text-gray-600">
+            &copy; 2026 SonicMind. All rights reserved. Built with structural execution logic.
+        </div>
+    </footer>
 
 </body>
 </html>
